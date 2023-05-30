@@ -205,7 +205,7 @@ class Snapshot(object):
                     return
                 else:
                     n["error"] -=1
-
+                    return self.send_vote(sign, message, n)
 
 
 

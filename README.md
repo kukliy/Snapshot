@@ -11,6 +11,8 @@
 #### Proposal:
 ![image](https://github.com/Kukliys/Snapshot/assets/133702805/f8d4d193-0167-4707-a941-755b6dc40883)
 
+Количество дао и пропозалов неограничено.
+
 
 #### Формат прокси:
 `login:password@ip:port`

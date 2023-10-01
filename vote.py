@@ -1,3 +1,4 @@
+import random
 import requests
 import json
 import time
@@ -63,7 +64,7 @@ class Snapshot(object):
                 "domain": {"name": "snapshot", "version": "0.1.4"},
                 "message": {
 
-                    "app": "snapshot", "choice": 1, "from": self.address, "metadata": "{}", "proposal": prop,
+                    "app": "snapshot", "choice": random.randrange(1,3,1), "from": self.address, "metadata": "{}", "proposal": prop,
                     "reason": "",
                     "space": prop_d[0], "timestamp": deadline
 

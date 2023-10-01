@@ -1,3 +1,4 @@
+import random
 import time
 from vote import Snapshot
 import re
@@ -30,17 +31,20 @@ if __name__ == "__main__":
     else:
         choice = 3
 
+    sleep_start = 3
+    sleep_end = 10
+    
     for i in range(0,len(private_keys)):
         if choice ==1:
             Snapshot(private_keys[i]).vote(proposal,prop_adrs)
-            time.sleep(3)
+            time.sleep(random.randrange(sleep_start,sleep_end))
         elif choice ==2:
             Snapshot(private_keys[i], proxy).vote(proposal,prop_adrs)
-            time.sleep(3)
+            time.sleep(random.randrange(sleep_start,sleep_end))
 
         else:
             Snapshot(private_keys[i],proxy[i]).vote(proposal,prop_adrs)
-            time.sleep(3)
+            time.sleep(random.randrange(sleep_start,sleep_end))
 
 
     exit()
